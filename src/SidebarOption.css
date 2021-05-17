@@ -3,6 +3,8 @@
 	align-items: center;
 	font-size: 12px;
 	padding-left: 2px;
+	padding-right: 18px;
+	/* margin- */
 	cursor: pointer;
 }
 
