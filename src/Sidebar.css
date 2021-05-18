@@ -36,6 +36,8 @@
 	font-size: 15px;
 	font-weight: 600;
 	margin-bottom: 5px;
+	white-space: nowrap;
+	margin-right: 10px;
 }
 
 .sidebar__info > h3 {
@@ -43,6 +45,8 @@
 	align-items: center;
 	font-size: 13px;
 	font-weight: 500;
+	white-space: nowrap;
+	margin-right: 10px;
 }
 
 .sidebar__info > h3 > .mui__icon {
