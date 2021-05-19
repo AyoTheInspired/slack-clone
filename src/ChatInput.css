@@ -17,9 +17,9 @@
 	padding: 20px;
 }
 
-/* .chatInput > form > button {
- display: none;
-} */
+.chatInput > form > button {
+	display: none;
+}
 
 .chatInput > form > input:focus {
 	outline: none;
