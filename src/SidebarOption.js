@@ -12,6 +12,7 @@ function SidebarOption({ Icon, title, id, addChannelOption }) {
 	const selectChannel = () => {
 		if (id) {
 			history.push(`/room/${id}`);
+			console.log(id);
 		} else {
 			history.push(title);
 		}

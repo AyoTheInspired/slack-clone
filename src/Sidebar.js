@@ -16,13 +16,14 @@ import AddIcon from "@material-ui/icons/Add";
 import db from "./firebase";
 import { useStateValue } from "./StateProvider";
 
-
 function Sidebar() {
 	const [channels, setChannels] = useState([]);
-	const [{user}] = useStateValue()
+	const [{ user }] = useStateValue();
 
 	useEffect(() => {
 		db.collection("rooms").onSnapshot((snapshot) => {
+			// console.log(snapshot.firestore);
+			console.log(snapshot.doc);
 			setChannels(
 				snapshot.docs.map((doc) => ({
 					id: doc.id,
@@ -59,7 +60,7 @@ function Sidebar() {
 			<SidebarOption Icon={AddIcon} addChannelOption title="Add Channel" />
 
 			{channels.map((channel) => (
-				<SidebarOption title={channel.name} id={channel.id} key={channel.id} />
+				<SidebarOption title={channel.name} id={channel.id} />
 			))}
 		</div>
 	);
