@@ -36,7 +36,7 @@ if (channelId) {
  return (
   
   <div className="chatInput">
-  <form onSubmit={sendMessage}>
+  <form>
   <input
   type="text"
   value={input}
