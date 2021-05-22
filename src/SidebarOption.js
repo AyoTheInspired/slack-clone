@@ -1,6 +1,5 @@
 import React from "react";
 import "./SidebarOption.css";
-import InsertCommentIcon from "@material-ui/icons/InsertComment";
 import { useHistory } from "react-router";
 import db from "./firebase";
 
@@ -12,7 +11,6 @@ function SidebarOption({ Icon, title, id, addChannelOption }) {
 	const selectChannel = () => {
 		if (id) {
 			history.push(`/room/${id}`);
-			console.log(id);
 		} else {
 			history.push(title);
 		}

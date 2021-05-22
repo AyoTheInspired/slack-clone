@@ -4,7 +4,7 @@
 	border-top: 1px solid #49274b;
 	max-width: 260px;
 	color: #fff;
-	height: 100vh;
+	height: 100vh !important;
 }
 
 .sidebar > hr {
